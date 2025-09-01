@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matty Campbell Building</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#222">
+</head>
+<body>
+  <header>
+    <h1>Matty Campbell Building</h1>
+  </header>
+
+  <main>
+    <!-- Work Log -->
+    <section id="work" class="active">
+      <h2>Work Log</h2>
+      <form id="workForm">
+        <input type="date" id="workDate" required>
+        <input type="text" id="workTask" placeholder="Task" required>
+        <input type="number" id="workHours" placeholder="Hours" required>
+        <button type="submit">Add Log</button>
+      </form>
+      <ul id="workList"></ul>
+    </section>
+
+    <!-- Tasks -->
+    <section id="tasks">
+      <h2>Tasks</h2>
+      <form id="taskForm">
+        <input type="text" id="taskName" placeholder="Task name" required>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- Calendar -->
+    <section id="calendar">
+      <h2>Calendar</h2>
+      <p>Calendar integration coming soon.</p>
+    </section>
+
+    <!-- Materials -->
+    <section id="materials">
+      <h2>Materials</h2>
+      <p>Materials tracking coming soon.</p>
+    </section>
+
+    <!-- Cutting -->
+    <section id="cutting">
+      <h2>Cutting List</h2>
+      <p>Cutting list feature coming soon.</p>
+    </section>
+  </main>
+
+  <nav>
+    <button onclick="showSection('work')">Work Log</button>
+    <button onclick="showSection('tasks')">Tasks</button>
+    <button onclick="showSection('calendar')">Calendar</button>
+    <button onclick="showSection('materials')">Materials</button>
+    <button onclick="showSection('cutting')">Cutting</button>
+  </nav>
+
+  <script src="main.js"></script>
+</body>
+</html>
